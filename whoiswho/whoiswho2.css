@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; 
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    background-image: url("gravityfalls.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Arial', sans-serif; 
+}
+
+.container {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    margin-top: -35px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#dos {
+    width: 95%;
+    max-width: 1200px;
+}
+
+.center {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-collapse: collapse;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.center td {
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.center td img {
+    max-width: 180px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.center td img:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    border: 3px solid #ffcc00;
+    width: fit-content;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .center td img {
+        max-width: 120px;
+    }
+}
+
